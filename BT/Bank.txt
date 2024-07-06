@@ -3,9 +3,6 @@
  if(msg.value==0)
  {
 user_account[msg.sender]=0;
-user_exists[msg.sender]=true;
- return "Account created";
- }
  require(user_exists[msg.sender]==false,"Account already created");
 user_account[msg.sender]=msg.value;
 user_exists[msg.sender]=true;

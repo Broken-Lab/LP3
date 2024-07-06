@@ -3,11 +3,6 @@ def solve_knapsack():
     wt = [8, 16, 32, 40] 
     W = 64
     n = len(val) - 1
-    def knapsack(W, n): 
-    
-         if n < 0 or W <= 0:
-             return 0
- 
          if wt[n] > W:
              return knapsack(W, n - 1)
          else:
